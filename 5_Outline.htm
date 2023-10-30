@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <style>
+    /* outline */
+    p.dotted {outline-style: dotted;}
+    p.dashed {outline-style: dashed;}
+    p.solid {outline-style: solid;}
+    p.double {outline-style: double;}
+    p.groove {outline-style: groove;}
+    p.ridge {outline-style: ridge;}
+    p.inset {outline-style: inset;}
+    p.outset {outline-style: outset;}
+
+    /* Outline: Width */
+    p.dotted1 {
+        border: 2px solid #8a2be2;
+        outline-style: dotted; 
+        outline-width: thin;
+        outline-color: #f10505;
+    }
+    p.dashed1 {
+        border: 2px solid #8a2be2;
+        outline-style: dashed;
+        outline-width: medium;
+        outline-color: #008000;
+    }
+    p.solid1 {
+        border: 2px solid #8a2be2;
+        outline-style: solid;
+        outline-width: 8px;
+        outline-color: #7fffd4;
+    }
+    /* Outline: Shortcut */
+    p.solid2 {
+        border: 2px dotted #008000;
+        outline: 8px double #8a2be2;
+    }
+
+    /* Outline: Offset */
+    p.solid3 {
+        width: 800px;
+        margin: 30px 20px 40px 20px;
+        align-items: center;
+        border: 2px dotted #008000;
+        outline: 8px double #8a2be2;
+        outline-offset: 15px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Outline -->
+    <h2><mark>Outline</mark></h2>
+    <p class="dotted">A dotted outline</p>
+    <p class="dashed">A dashed outline</p>
+    <p class="solid">A solid outline</p>
+    <p class="double">A double outline</p>
+    <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+    <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+    <!-- Outline: Width -->
+    <h2><mark>Outline: Width</mark></h2>
+    <p class="dotted1">A dotted outline</p>
+    <p class="dashed1">A dashed outline</p>
+    <p class="solid1">A solid outline</p>
+
+    <!-- Outline: ShortCut -->
+    <h2><mark>Outline: ShortCut</mark></h2>
+    <p class="solid2">A solid outline</p>
+
+    <!-- Outline: Offset -->
+    <h2><mark>Outline: Offset</mark></h2>
+    <p class="solid3">A solid outline</p>
+</body>
+</html>
