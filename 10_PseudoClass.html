@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        /* link, visited, hover, active */
+        a:link {color:blue;}
+        a:visited {color:black;}
+        a:hover {color:aqua;font-size: 26px;}
+        a:active {color:brown;}
+
+        /* focus */
+        input:focus {background-color: yellow;}
+
+        /* hover to display */
+        div p {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+        div:hover p {display:block}
+    </style>
+</head>
+<body>
+    <!-- link, visited, hover, active -->
+    <a href="http://www.google.com" target="_blank">spotzone</a>
+    <br>
+    <a href="http://www.google.com" target="_blank">spotzone</a>
+    <br><br>
+    <!-- focus -->
+    First Name: <input type="text" name="fname" id="Name" placeholder="first name">
+    <br><br>
+
+    <!-- hover to display block -->
+    <div>Hover me!
+        <p>Hello How are you!</p>
+    </div>
+</body>
+</html>
