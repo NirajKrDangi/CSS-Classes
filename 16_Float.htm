@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display float</title>
+    <style>
+        body{
+            margin: 0 auto;
+            box-sizing: border-box;
+            border: 3px solid #0af05b;
+            background-color: #a87fff;
+            width: 900px;
+            width: 90%;
+            padding: 0 12px;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            float: left;
+            width: 180px;
+            height: 180px;
+            border-radius: 150px;
+            background-color: #2d028b;
+            padding: 20px;
+        }
+        .cleared-1 {
+            clear: left;
+        }
+        .cleared, .cleared-0, .cleared-1{
+            padding: 0 20px;
+            display: flex;
+        }
+        .cleared-2 {
+            /* display: inline-block; */
+            width: 200px;
+            height: 245px;
+            background-color: #e351d7;
+            color: #fff;
+            padding: 39px;
+            float: right;
+        }
+        .cleared-3 {
+            /* display: inline-block; */
+            width: 200px;
+            height: 245px;
+            background-color: #e8eb36;
+            color: rgb(16, 24, 24);
+            padding: 39px;
+            float: left;
+        }
+        .cleared-4 {
+            display: inline-block;
+            width: 200px;
+            height: 245px;
+            background-color: #028b3d;
+            color: #ffffff;
+            padding: 39px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Float</h1>
+    <img src="user.png" alt="user">
+    <p class="cleared">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt hic pariatur beatae quibusdam consectetur, aliquid quam velit laborum obcaecati sint dignissimos placeat officia iste quisquam dolore expedita rem maiores perferendis commodi nostrum, est qui! In alias adipisci quo atque a! Eaque ipsum fugiat veritatis a mollitia? Porro suscipit voluptatibus dolore!</p>
+    <p class="cleared-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam veniam libero impedit. Ea mollitia quidem perferendis atque consequuntur voluptas asperiores earum id porro nisi doloribus alias explicabo quam nulla, possimus ipsam quia, ut nobis! Debitis aliquid, deserunt porro officiis officia pariatur recusandae quos? Quis quibusdam, error voluptatem sit maiores incidunt!</p>
+    <p class="cleared-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi eos amet magni inventore maiores voluptates ea harum perferendis, accusantium corporis doloremque ratione, excepturi impedit hic dolore. Ratione eum exercitationem asperiores sunt deserunt laudantium illo itaque ex expedita ipsum aperiam nostrum a vero non aut laboriosam placeat, temporibus nihil consequuntur.</p>
+    <p class="cleared-2"> <b>float-right:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi eos amet magni inventore maiores voluptates ea harum perferendis, accusantium corporis doloremque ratione, excepturi impedit hic dolore. Ratione eum exercitationem asperiores sunt deserunt laudantium illo itaque ex expedita ipsum aperiam nostrum a vero non aut laboriosam placeat, temporibus nihil consequuntur.</p>
+    <p class="cleared-3"><b>float-left:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi eos amet magni inventore maiores voluptates ea harum perferendis, accusantium corporis doloremque ratione, excepturi impedit hic dolore. Ratione eum exercitationem asperiores sunt deserunt laudantium illo itaque ex expedita ipsum aperiam nostrum a vero non aut laboriosam placeat, temporibus nihil consequuntur.</p>
+    <p class="cleared-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi eos amet magni inventore maiores voluptates ea harum perferendis, accusantium corporis doloremque ratione, excepturi impedit hic dolore. Ratione eum exercitationem asperiores sunt deserunt laudantium illo itaque ex expedita ipsum aperiam nostrum a vero non aut laboriosam placeat, temporibus nihil consequuntur.</p>
+</body>
+</html>
