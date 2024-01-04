@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        div.container{
+            border: 5px solid black;
+            width: 98vw;
+            height: 100vh;
+            display: flex;
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: row;
+            justify-content:space-between;
+            align-items:center;
+            align-content:center;
+            gap: 20px; */
+            flex-wrap: wrap;
+            align-content:flex-start;
+            /* gap: 1em; */
+        }
+        .box{
+            border: 2px solid red;
+            width: 234px;
+            height: 180px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .box-1{
+            background-color: orchid;
+            /* flex-grow: 3; */
+            order:4;
+            flex-shrink: 2;
+        }
+        .box-2{
+            background-color: rgb(0, 179, 78);
+
+        }
+        .box-3{
+            background-color: rgb(5, 28, 204);
+        }
+        .box-4{
+            background-color: rgb(204, 5, 184);
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex Box Container Property</h2>
+    <div class="container">
+        <div class="box box-1">one</div>
+        <div class="box box-2">Two</div>
+        <div class="box box-3">Three</div>
+        <div class="box box-4">Four</div>
+    </div>
+</body>
+</html>
