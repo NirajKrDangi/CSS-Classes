@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positions</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .parent-element {
+      background-color: aquamarine;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 700px;
+      height: 1800px;
+      position: relative;
+    }
+
+    .parent-element div p {
+      background-color: blueviolet;
+      border: 2px solid rgb(14, 46, 209);
+      padding: 5px;
+      margin: 5px;
+    }
+
+    .second-child {
+      /* position: relative; */
+      /* position: absolute; */
+      /* position: fixed; */
+      position: sticky;
+      top: 10px;
+      left: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="parent-element">
+    <div class="first-child"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, quis.</p></div>
+    <div class="second-child"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, voluptas?</p></div>
+    <div class="third-child"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, quisquam?</p></div>
+  </div>
+</body>
+
+</html>
